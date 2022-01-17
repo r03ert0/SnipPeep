@@ -52,7 +52,10 @@
 	[[NSColor whiteColor] set];
 	NSRectFill(rect);
 	NSBezierPath	*bz;
-	
+
+    if(sub==nil)
+        return;
+
 	int				i,j,bar,snpIndex=-1;
 	float			ind,dist,mindist=-1;
 	NSDictionary	*attr=[NSDictionary dictionaryWithObject:[NSFont fontWithName:@"Helvetica" size:9.0] forKey:NSFontAttributeName];
